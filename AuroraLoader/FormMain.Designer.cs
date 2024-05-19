@@ -31,362 +31,346 @@ namespace AuroraLoader
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMain));
-            this.ButtonSinglePlayer = new System.Windows.Forms.Button();
-            this.LabelAuroraVersion = new System.Windows.Forms.Label();
-            this.TrackMusicVolume = new System.Windows.Forms.TrackBar();
-            this.CheckEnableMusic = new System.Windows.Forms.CheckBox();
-            this.ButtonReadme = new System.Windows.Forms.Button();
-            this.ButtonChangelog = new System.Windows.Forms.Button();
-            this.LabelAuroraLoaderVersion = new System.Windows.Forms.Label();
-            this.CheckEnableMods = new System.Windows.Forms.CheckBox();
-            this.CheckEnablePoweruserMods = new System.Windows.Forms.CheckBox();
-            this.ComboSelectExecutableMod = new System.Windows.Forms.ComboBox();
-            this.ListDatabaseMods = new System.Windows.Forms.CheckedListBox();
-            this.ListUtilities = new System.Windows.Forms.CheckedListBox();
-            this.LinkForums = new System.Windows.Forms.LinkLabel();
-            this.LinkReportBug = new System.Windows.Forms.LinkLabel();
-            this.LinkSubreddit = new System.Windows.Forms.LinkLabel();
-            this.LinkDiscord = new System.Windows.Forms.LinkLabel();
-            this.LabelUtilities = new System.Windows.Forms.Label();
-            this.LabelDatabaseMods = new System.Windows.Forms.Label();
-            this.LinkModSubreddit = new System.Windows.Forms.LinkLabel();
-            this.ButtonMultiplayer = new System.Windows.Forms.Button();
-            this.ButtonManageMods = new System.Windows.Forms.Button();
-            this.SelectedSavelabel = new System.Windows.Forms.Label();
-            this.ButtonMangeSaves = new System.Windows.Forms.Button();
-            this.PictureBoxUpdateAurora = new System.Windows.Forms.PictureBox();
-            this.PictureBoxUpdateLoader = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.TrackMusicVolume)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PictureBoxUpdateAurora)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PictureBoxUpdateLoader)).BeginInit();
-            this.SuspendLayout();
+            ButtonSinglePlayer = new Button();
+            LabelAuroraVersion = new Label();
+            TrackMusicVolume = new TrackBar();
+            CheckEnableMusic = new CheckBox();
+            ButtonReadme = new Button();
+            ButtonChangelog = new Button();
+            LabelAuroraLoaderVersion = new Label();
+            CheckEnableMods = new CheckBox();
+            CheckEnablePoweruserMods = new CheckBox();
+            ComboSelectExecutableMod = new ComboBox();
+            ListDatabaseMods = new CheckedListBox();
+            ListUtilities = new CheckedListBox();
+            LinkForums = new LinkLabel();
+            LinkReportBug = new LinkLabel();
+            LinkSubreddit = new LinkLabel();
+            LinkDiscord = new LinkLabel();
+            LabelUtilities = new Label();
+            LabelDatabaseMods = new Label();
+            LinkModSubreddit = new LinkLabel();
+            ButtonMultiplayer = new Button();
+            ButtonManageMods = new Button();
+            SelectedSavelabel = new Label();
+            ButtonMangeSaves = new Button();
+            PictureBoxUpdateAurora = new PictureBox();
+            ((System.ComponentModel.ISupportInitialize)TrackMusicVolume).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)PictureBoxUpdateAurora).BeginInit();
+            SuspendLayout();
             // 
             // ButtonSinglePlayer
             // 
-            this.ButtonSinglePlayer.Enabled = false;
-            this.ButtonSinglePlayer.Location = new System.Drawing.Point(12, 46);
-            this.ButtonSinglePlayer.Margin = new System.Windows.Forms.Padding(4);
-            this.ButtonSinglePlayer.Name = "ButtonSinglePlayer";
-            this.ButtonSinglePlayer.Size = new System.Drawing.Size(84, 24);
-            this.ButtonSinglePlayer.TabIndex = 2;
-            this.ButtonSinglePlayer.Text = "Play";
-            this.ButtonSinglePlayer.UseVisualStyleBackColor = true;
-            this.ButtonSinglePlayer.Click += new System.EventHandler(this.ButtonSinglePlayer_Click);
+            ButtonSinglePlayer.Enabled = false;
+            ButtonSinglePlayer.Location = new System.Drawing.Point(12, 46);
+            ButtonSinglePlayer.Margin = new Padding(4);
+            ButtonSinglePlayer.Name = "ButtonSinglePlayer";
+            ButtonSinglePlayer.Size = new System.Drawing.Size(84, 24);
+            ButtonSinglePlayer.TabIndex = 2;
+            ButtonSinglePlayer.Text = "Play";
+            ButtonSinglePlayer.UseVisualStyleBackColor = true;
+            ButtonSinglePlayer.Click += ButtonSinglePlayer_Click;
             // 
             // LabelAuroraVersion
             // 
-            this.LabelAuroraVersion.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.LabelAuroraVersion.Location = new System.Drawing.Point(410, 252);
-            this.LabelAuroraVersion.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.LabelAuroraVersion.Name = "LabelAuroraVersion";
-            this.LabelAuroraVersion.Size = new System.Drawing.Size(133, 15);
-            this.LabelAuroraVersion.TabIndex = 7;
-            this.LabelAuroraVersion.Text = "Aurora v#.##.#";
-            this.LabelAuroraVersion.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            LabelAuroraVersion.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
+            LabelAuroraVersion.Location = new System.Drawing.Point(410, 252);
+            LabelAuroraVersion.Margin = new Padding(4, 0, 4, 0);
+            LabelAuroraVersion.Name = "LabelAuroraVersion";
+            LabelAuroraVersion.Size = new System.Drawing.Size(133, 15);
+            LabelAuroraVersion.TabIndex = 7;
+            LabelAuroraVersion.Text = "Aurora v#.##.#";
+            LabelAuroraVersion.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
             // TrackMusicVolume
             // 
-            this.TrackMusicVolume.Enabled = false;
-            this.TrackMusicVolume.LargeChange = 1;
-            this.TrackMusicVolume.Location = new System.Drawing.Point(219, 46);
-            this.TrackMusicVolume.Margin = new System.Windows.Forms.Padding(4);
-            this.TrackMusicVolume.Name = "TrackMusicVolume";
-            this.TrackMusicVolume.Size = new System.Drawing.Size(162, 45);
-            this.TrackMusicVolume.TabIndex = 20;
-            this.TrackMusicVolume.Value = 4;
+            TrackMusicVolume.Enabled = false;
+            TrackMusicVolume.LargeChange = 1;
+            TrackMusicVolume.Location = new System.Drawing.Point(219, 46);
+            TrackMusicVolume.Margin = new Padding(4);
+            TrackMusicVolume.Name = "TrackMusicVolume";
+            TrackMusicVolume.Size = new System.Drawing.Size(162, 45);
+            TrackMusicVolume.TabIndex = 20;
+            TrackMusicVolume.Value = 4;
             // 
             // CheckEnableMusic
             // 
-            this.CheckEnableMusic.AutoSize = true;
-            this.CheckEnableMusic.Location = new System.Drawing.Point(104, 51);
-            this.CheckEnableMusic.Margin = new System.Windows.Forms.Padding(4);
-            this.CheckEnableMusic.Name = "CheckEnableMusic";
-            this.CheckEnableMusic.Size = new System.Drawing.Size(107, 19);
-            this.CheckEnableMusic.TabIndex = 2;
-            this.CheckEnableMusic.Text = "In-Game Music";
-            this.CheckEnableMusic.UseVisualStyleBackColor = true;
-            this.CheckEnableMusic.CheckedChanged += new System.EventHandler(this.CheckMusic_CheckedChanged);
+            CheckEnableMusic.AutoSize = true;
+            CheckEnableMusic.Location = new System.Drawing.Point(104, 51);
+            CheckEnableMusic.Margin = new Padding(4);
+            CheckEnableMusic.Name = "CheckEnableMusic";
+            CheckEnableMusic.Size = new System.Drawing.Size(107, 19);
+            CheckEnableMusic.TabIndex = 2;
+            CheckEnableMusic.Text = "In-Game Music";
+            CheckEnableMusic.UseVisualStyleBackColor = true;
+            CheckEnableMusic.CheckedChanged += CheckMusic_CheckedChanged;
             // 
             // ButtonReadme
             // 
-            this.ButtonReadme.Location = new System.Drawing.Point(395, 12);
-            this.ButtonReadme.Margin = new System.Windows.Forms.Padding(4);
-            this.ButtonReadme.Name = "ButtonReadme";
-            this.ButtonReadme.Size = new System.Drawing.Size(84, 24);
-            this.ButtonReadme.TabIndex = 13;
-            this.ButtonReadme.Text = "Readme";
-            this.ButtonReadme.UseVisualStyleBackColor = true;
-            this.ButtonReadme.Click += new System.EventHandler(this.ButtonReadme_Click);
+            ButtonReadme.Location = new System.Drawing.Point(395, 12);
+            ButtonReadme.Margin = new Padding(4);
+            ButtonReadme.Name = "ButtonReadme";
+            ButtonReadme.Size = new System.Drawing.Size(84, 24);
+            ButtonReadme.TabIndex = 13;
+            ButtonReadme.Text = "Readme";
+            ButtonReadme.UseVisualStyleBackColor = true;
+            ButtonReadme.Click += ButtonReadme_Click;
             // 
             // ButtonChangelog
-            //
-            this.ButtonChangelog.Location = new System.Drawing.Point(495, 12);
-            this.ButtonChangelog.Margin = new System.Windows.Forms.Padding(4);
-            this.ButtonChangelog.Name = "ButtonChangelog";
-            this.ButtonChangelog.Size = new System.Drawing.Size(84, 24);
-            this.ButtonChangelog.TabIndex = 14;
-            this.ButtonChangelog.Text = "Changelog";
-            this.ButtonChangelog.UseVisualStyleBackColor = true;
-            this.ButtonChangelog.Click += new System.EventHandler(this.ButtonChangelog_Click);
-            //
+            // 
+            ButtonChangelog.Location = new System.Drawing.Point(495, 12);
+            ButtonChangelog.Margin = new Padding(4);
+            ButtonChangelog.Name = "ButtonChangelog";
+            ButtonChangelog.Size = new System.Drawing.Size(84, 24);
+            ButtonChangelog.TabIndex = 14;
+            ButtonChangelog.Text = "Changelog";
+            ButtonChangelog.UseVisualStyleBackColor = true;
+            ButtonChangelog.Click += ButtonChangelog_Click;
+            // 
             // LabelAuroraLoaderVersion
             // 
-            this.LabelAuroraLoaderVersion.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.LabelAuroraLoaderVersion.Location = new System.Drawing.Point(231, 252);
-            this.LabelAuroraLoaderVersion.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.LabelAuroraLoaderVersion.Name = "LabelAuroraLoaderVersion";
-            this.LabelAuroraLoaderVersion.Size = new System.Drawing.Size(133, 15);
-            this.LabelAuroraLoaderVersion.TabIndex = 7;
-            this.LabelAuroraLoaderVersion.Text = "Loader v#.##.#";
-            this.LabelAuroraLoaderVersion.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            LabelAuroraLoaderVersion.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
+            LabelAuroraLoaderVersion.Location = new System.Drawing.Point(290, 252);
+            LabelAuroraLoaderVersion.Margin = new Padding(4, 0, 4, 0);
+            LabelAuroraLoaderVersion.Name = "LabelAuroraLoaderVersion";
+            LabelAuroraLoaderVersion.Size = new System.Drawing.Size(133, 15);
+            LabelAuroraLoaderVersion.TabIndex = 7;
+            LabelAuroraLoaderVersion.Text = "Loader v#.##.#";
+            LabelAuroraLoaderVersion.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
             // CheckEnableMods
             // 
-            this.CheckEnableMods.AutoSize = true;
-            this.CheckEnableMods.Location = new System.Drawing.Point(12, 81);
-            this.CheckEnableMods.Name = "CheckEnableMods";
-            this.CheckEnableMods.Size = new System.Drawing.Size(94, 19);
-            this.CheckEnableMods.TabIndex = 21;
-            this.CheckEnableMods.Text = "Enable Mods";
-            this.CheckEnableMods.UseVisualStyleBackColor = true;
-            this.CheckEnableMods.CheckedChanged += new System.EventHandler(this.CheckEnableMods_CheckChanged);
+            CheckEnableMods.AutoSize = true;
+            CheckEnableMods.Location = new System.Drawing.Point(12, 81);
+            CheckEnableMods.Name = "CheckEnableMods";
+            CheckEnableMods.Size = new System.Drawing.Size(94, 19);
+            CheckEnableMods.TabIndex = 21;
+            CheckEnableMods.Text = "Enable Mods";
+            CheckEnableMods.UseVisualStyleBackColor = true;
+            CheckEnableMods.CheckedChanged += CheckEnableMods_CheckChanged;
             // 
             // CheckEnablePoweruserMods
             // 
-            this.CheckEnablePoweruserMods.AutoSize = true;
-            this.CheckEnablePoweruserMods.Location = new System.Drawing.Point(104, 80);
-            this.CheckEnablePoweruserMods.Name = "CheckEnablePoweruserMods";
-            this.CheckEnablePoweruserMods.Size = new System.Drawing.Size(152, 19);
-            this.CheckEnablePoweruserMods.TabIndex = 23;
-            this.CheckEnablePoweruserMods.Text = "Enable Poweruser Mods";
-            this.CheckEnablePoweruserMods.UseVisualStyleBackColor = true;
-            this.CheckEnablePoweruserMods.CheckedChanged += new System.EventHandler(this.CheckEnablePoweruserMod_CheckChanged);
+            CheckEnablePoweruserMods.AutoSize = true;
+            CheckEnablePoweruserMods.Location = new System.Drawing.Point(104, 80);
+            CheckEnablePoweruserMods.Name = "CheckEnablePoweruserMods";
+            CheckEnablePoweruserMods.Size = new System.Drawing.Size(152, 19);
+            CheckEnablePoweruserMods.TabIndex = 23;
+            CheckEnablePoweruserMods.Text = "Enable Poweruser Mods";
+            CheckEnablePoweruserMods.UseVisualStyleBackColor = true;
+            CheckEnablePoweruserMods.CheckedChanged += CheckEnablePoweruserMod_CheckChanged;
             // 
             // ComboSelectExecutableMod
             // 
-            this.ComboSelectExecutableMod.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.ComboSelectExecutableMod.FormattingEnabled = true;
-            this.ComboSelectExecutableMod.Location = new System.Drawing.Point(262, 77);
-            this.ComboSelectExecutableMod.Name = "ComboSelectExecutableMod";
-            this.ComboSelectExecutableMod.Size = new System.Drawing.Size(216, 23);
-            this.ComboSelectExecutableMod.TabIndex = 27;
+            ComboSelectExecutableMod.DropDownStyle = ComboBoxStyle.DropDownList;
+            ComboSelectExecutableMod.FormattingEnabled = true;
+            ComboSelectExecutableMod.Location = new System.Drawing.Point(262, 77);
+            ComboSelectExecutableMod.Name = "ComboSelectExecutableMod";
+            ComboSelectExecutableMod.Size = new System.Drawing.Size(216, 23);
+            ComboSelectExecutableMod.TabIndex = 27;
             // 
             // ListDatabaseMods
             // 
-            this.ListDatabaseMods.FormattingEnabled = true;
-            this.ListDatabaseMods.Location = new System.Drawing.Point(317, 138);
-            this.ListDatabaseMods.Name = "ListDatabaseMods";
-            this.ListDatabaseMods.Size = new System.Drawing.Size(264, 94);
-            this.ListDatabaseMods.TabIndex = 26;
+            ListDatabaseMods.FormattingEnabled = true;
+            ListDatabaseMods.Location = new System.Drawing.Point(317, 138);
+            ListDatabaseMods.Name = "ListDatabaseMods";
+            ListDatabaseMods.Size = new System.Drawing.Size(264, 94);
+            ListDatabaseMods.TabIndex = 26;
             // 
             // ListUtilities
             // 
-            this.ListUtilities.FormattingEnabled = true;
-            this.ListUtilities.Location = new System.Drawing.Point(12, 138);
-            this.ListUtilities.Name = "ListUtilities";
-            this.ListUtilities.Size = new System.Drawing.Size(264, 94);
-            this.ListUtilities.TabIndex = 27;
-            this.ListUtilities.SelectedIndexChanged += new System.EventHandler(this.ListUtilityMods_SelectedIndexChanged);
+            ListUtilities.FormattingEnabled = true;
+            ListUtilities.Location = new System.Drawing.Point(12, 138);
+            ListUtilities.Name = "ListUtilities";
+            ListUtilities.Size = new System.Drawing.Size(264, 94);
+            ListUtilities.TabIndex = 27;
+            ListUtilities.SelectedIndexChanged += ListUtilityMods_SelectedIndexChanged;
             // 
             // LinkForums
             // 
-            this.LinkForums.AutoSize = true;
-            this.LinkForums.Location = new System.Drawing.Point(496, 51);
-            this.LinkForums.Name = "LinkForums";
-            this.LinkForums.Size = new System.Drawing.Size(88, 15);
-            this.LinkForums.TabIndex = 33;
-            this.LinkForums.TabStop = true;
-            this.LinkForums.Text = "Official Forums";
-            this.LinkForums.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.LinkForums_LinkClicked);
+            LinkForums.AutoSize = true;
+            LinkForums.Location = new System.Drawing.Point(496, 51);
+            LinkForums.Name = "LinkForums";
+            LinkForums.Size = new System.Drawing.Size(88, 15);
+            LinkForums.TabIndex = 33;
+            LinkForums.TabStop = true;
+            LinkForums.Text = "Official Forums";
+            LinkForums.LinkClicked += LinkForums_LinkClicked;
             // 
             // LinkReportBug
             // 
-            this.LinkReportBug.AutoSize = true;
-            this.LinkReportBug.Location = new System.Drawing.Point(508, 111);
-            this.LinkReportBug.Name = "LinkReportBug";
-            this.LinkReportBug.Size = new System.Drawing.Size(75, 15);
-            this.LinkReportBug.TabIndex = 34;
-            this.LinkReportBug.TabStop = true;
-            this.LinkReportBug.Text = "Report a Bug";
-            this.LinkReportBug.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.LinkVanillaBug_LinkClicked);
+            LinkReportBug.AutoSize = true;
+            LinkReportBug.Location = new System.Drawing.Point(508, 111);
+            LinkReportBug.Name = "LinkReportBug";
+            LinkReportBug.Size = new System.Drawing.Size(75, 15);
+            LinkReportBug.TabIndex = 34;
+            LinkReportBug.TabStop = true;
+            LinkReportBug.Text = "Report a Bug";
+            LinkReportBug.LinkClicked += LinkVanillaBug_LinkClicked;
             // 
             // LinkSubreddit
             // 
-            this.LinkSubreddit.AutoSize = true;
-            this.LinkSubreddit.Location = new System.Drawing.Point(484, 66);
-            this.LinkSubreddit.Name = "LinkSubreddit";
-            this.LinkSubreddit.Size = new System.Drawing.Size(97, 15);
-            this.LinkSubreddit.TabIndex = 35;
-            this.LinkSubreddit.TabStop = true;
-            this.LinkSubreddit.Text = "Aurora Subreddit";
-            this.LinkSubreddit.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.LinkVanillaSubreddit_LinkClicked);
+            LinkSubreddit.AutoSize = true;
+            LinkSubreddit.Location = new System.Drawing.Point(484, 66);
+            LinkSubreddit.Name = "LinkSubreddit";
+            LinkSubreddit.Size = new System.Drawing.Size(97, 15);
+            LinkSubreddit.TabIndex = 35;
+            LinkSubreddit.TabStop = true;
+            LinkSubreddit.Text = "Aurora Subreddit";
+            LinkSubreddit.LinkClicked += LinkVanillaSubreddit_LinkClicked;
             // 
             // LinkDiscord
             // 
-            this.LinkDiscord.AutoSize = true;
-            this.LinkDiscord.Location = new System.Drawing.Point(537, 96);
-            this.LinkDiscord.Name = "LinkDiscord";
-            this.LinkDiscord.Size = new System.Drawing.Size(47, 15);
-            this.LinkDiscord.TabIndex = 36;
-            this.LinkDiscord.TabStop = true;
-            this.LinkDiscord.Text = "Discord";
-            this.LinkDiscord.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.LinkDiscord_LinkClicked);
+            LinkDiscord.AutoSize = true;
+            LinkDiscord.Location = new System.Drawing.Point(537, 96);
+            LinkDiscord.Name = "LinkDiscord";
+            LinkDiscord.Size = new System.Drawing.Size(47, 15);
+            LinkDiscord.TabIndex = 36;
+            LinkDiscord.TabStop = true;
+            LinkDiscord.Text = "Discord";
+            LinkDiscord.LinkClicked += LinkDiscord_LinkClicked;
             // 
             // LabelUtilities
             // 
-            this.LabelUtilities.AutoSize = true;
-            this.LabelUtilities.Location = new System.Drawing.Point(12, 111);
-            this.LabelUtilities.Name = "LabelUtilities";
-            this.LabelUtilities.Size = new System.Drawing.Size(183, 15);
-            this.LabelUtilities.TabIndex = 38;
-            this.LabelUtilities.Text = "Launch utilities alongside Aurora:";
+            LabelUtilities.AutoSize = true;
+            LabelUtilities.Location = new System.Drawing.Point(12, 111);
+            LabelUtilities.Name = "LabelUtilities";
+            LabelUtilities.Size = new System.Drawing.Size(183, 15);
+            LabelUtilities.TabIndex = 38;
+            LabelUtilities.Text = "Launch utilities alongside Aurora:";
             // 
             // LabelDatabaseMods
             // 
-            this.LabelDatabaseMods.AutoSize = true;
-            this.LabelDatabaseMods.Location = new System.Drawing.Point(317, 111);
-            this.LabelDatabaseMods.Name = "LabelDatabaseMods";
-            this.LabelDatabaseMods.Size = new System.Drawing.Size(124, 15);
-            this.LabelDatabaseMods.TabIndex = 39;
-            this.LabelDatabaseMods.Text = "Apply database mods:";
+            LabelDatabaseMods.AutoSize = true;
+            LabelDatabaseMods.Location = new System.Drawing.Point(317, 111);
+            LabelDatabaseMods.Name = "LabelDatabaseMods";
+            LabelDatabaseMods.Size = new System.Drawing.Size(124, 15);
+            LabelDatabaseMods.TabIndex = 39;
+            LabelDatabaseMods.Text = "Apply database mods:";
             // 
             // LinkModSubreddit
             // 
-            this.LinkModSubreddit.AutoSize = true;
-            this.LinkModSubreddit.Location = new System.Drawing.Point(495, 81);
-            this.LinkModSubreddit.Name = "LinkModSubreddit";
-            this.LinkModSubreddit.Size = new System.Drawing.Size(86, 15);
-            this.LinkModSubreddit.TabIndex = 35;
-            this.LinkModSubreddit.TabStop = true;
-            this.LinkModSubreddit.Text = "Mod Subreddit";
-            this.LinkModSubreddit.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.LinkVanillaSubreddit_LinkClicked);
+            LinkModSubreddit.AutoSize = true;
+            LinkModSubreddit.Location = new System.Drawing.Point(495, 81);
+            LinkModSubreddit.Name = "LinkModSubreddit";
+            LinkModSubreddit.Size = new System.Drawing.Size(86, 15);
+            LinkModSubreddit.TabIndex = 35;
+            LinkModSubreddit.TabStop = true;
+            LinkModSubreddit.Text = "Mod Subreddit";
+            LinkModSubreddit.LinkClicked += LinkVanillaSubreddit_LinkClicked;
             // 
             // ButtonMultiplayer
             // 
-            this.ButtonMultiplayer.Location = new System.Drawing.Point(122, 243);
-            this.ButtonMultiplayer.Margin = new System.Windows.Forms.Padding(4);
-            this.ButtonMultiplayer.Name = "ButtonMultiplayer";
-            this.ButtonMultiplayer.Size = new System.Drawing.Size(103, 27);
-            this.ButtonMultiplayer.TabIndex = 2;
-            this.ButtonMultiplayer.Text = "Play Multiplayer";
-            this.ButtonMultiplayer.UseVisualStyleBackColor = true;
-            this.ButtonMultiplayer.Click += new System.EventHandler(this.ButtonSinglePlayer_Click);
+            ButtonMultiplayer.Location = new System.Drawing.Point(122, 243);
+            ButtonMultiplayer.Margin = new Padding(4);
+            ButtonMultiplayer.Name = "ButtonMultiplayer";
+            ButtonMultiplayer.Size = new System.Drawing.Size(103, 27);
+            ButtonMultiplayer.TabIndex = 2;
+            ButtonMultiplayer.Text = "Play Multiplayer";
+            ButtonMultiplayer.UseVisualStyleBackColor = true;
+            ButtonMultiplayer.Click += ButtonSinglePlayer_Click;
             // 
             // ButtonManageMods
             // 
-            this.ButtonManageMods.Location = new System.Drawing.Point(12, 243);
-            this.ButtonManageMods.Name = "ButtonManageMods";
-            this.ButtonManageMods.Size = new System.Drawing.Size(103, 27);
-            this.ButtonManageMods.TabIndex = 41;
-            this.ButtonManageMods.Text = "Manage Mods";
-            this.ButtonManageMods.UseVisualStyleBackColor = true;
-            this.ButtonManageMods.Click += new System.EventHandler(this.ButtonManageMods_Click);
+            ButtonManageMods.Location = new System.Drawing.Point(12, 243);
+            ButtonManageMods.Name = "ButtonManageMods";
+            ButtonManageMods.Size = new System.Drawing.Size(103, 27);
+            ButtonManageMods.TabIndex = 41;
+            ButtonManageMods.Text = "Manage Mods";
+            ButtonManageMods.UseVisualStyleBackColor = true;
+            ButtonManageMods.Click += ButtonManageMods_Click;
             // 
             // SelectedSavelabel
             // 
-            this.SelectedSavelabel.AutoSize = true;
-            this.SelectedSavelabel.Location = new System.Drawing.Point(102, 18);
-            this.SelectedSavelabel.Name = "SelectedSavelabel";
-            this.SelectedSavelabel.Size = new System.Drawing.Size(72, 15);
-            this.SelectedSavelabel.TabIndex = 42;
-            this.SelectedSavelabel.Text = "No game selected";
+            SelectedSavelabel.AutoSize = true;
+            SelectedSavelabel.Location = new System.Drawing.Point(102, 18);
+            SelectedSavelabel.Name = "SelectedSavelabel";
+            SelectedSavelabel.Size = new System.Drawing.Size(102, 15);
+            SelectedSavelabel.TabIndex = 42;
+            SelectedSavelabel.Text = "No game selected";
             // 
             // ButtonMangeSaves
             // 
-            this.ButtonMangeSaves.Location = new System.Drawing.Point(12, 12);
-            this.ButtonMangeSaves.Name = "ButtonMangeSaves";
-            this.ButtonMangeSaves.Size = new System.Drawing.Size(84, 27);
-            this.ButtonMangeSaves.TabIndex = 41;
-            this.ButtonMangeSaves.Text = "Select Game";
-            this.ButtonMangeSaves.UseVisualStyleBackColor = true;
-            this.ButtonMangeSaves.Click += new System.EventHandler(this.ButtonManageSaves_Click);
+            ButtonMangeSaves.Location = new System.Drawing.Point(12, 12);
+            ButtonMangeSaves.Name = "ButtonMangeSaves";
+            ButtonMangeSaves.Size = new System.Drawing.Size(84, 27);
+            ButtonMangeSaves.TabIndex = 41;
+            ButtonMangeSaves.Text = "Select Game";
+            ButtonMangeSaves.UseVisualStyleBackColor = true;
+            ButtonMangeSaves.Click += ButtonManageSaves_Click;
             // 
             // PictureBoxUpdateAurora
             // 
-            this.PictureBoxUpdateAurora.Image = ((System.Drawing.Image)(resources.GetObject("PictureBoxUpdateAurora.Image")));
-            this.PictureBoxUpdateAurora.Location = new System.Drawing.Point(547, 238);
-            this.PictureBoxUpdateAurora.Name = "PictureBoxUpdateAurora";
-            this.PictureBoxUpdateAurora.Size = new System.Drawing.Size(32, 32);
-            this.PictureBoxUpdateAurora.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.PictureBoxUpdateAurora.TabIndex = 43;
-            this.PictureBoxUpdateAurora.TabStop = false;
-            this.PictureBoxUpdateAurora.Click += new System.EventHandler(this.ButtonUpdateAurora_Click);
-            // 
-            // PictureBoxUpdateLoader
-            // 
-            this.PictureBoxUpdateLoader.Image = ((System.Drawing.Image)(resources.GetObject("PictureBoxUpdateLoader.Image")));
-            this.PictureBoxUpdateLoader.Location = new System.Drawing.Point(371, 238);
-            this.PictureBoxUpdateLoader.Name = "PictureBoxUpdateLoader";
-            this.PictureBoxUpdateLoader.Size = new System.Drawing.Size(32, 32);
-            this.PictureBoxUpdateLoader.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.PictureBoxUpdateLoader.TabIndex = 43;
-            this.PictureBoxUpdateLoader.TabStop = false;
-            this.PictureBoxUpdateLoader.Click += new System.EventHandler(this.ButtonUpdateAuroraLoader_Click);
+            PictureBoxUpdateAurora.Image = (System.Drawing.Image)resources.GetObject("PictureBoxUpdateAurora.Image");
+            PictureBoxUpdateAurora.Location = new System.Drawing.Point(547, 238);
+            PictureBoxUpdateAurora.Name = "PictureBoxUpdateAurora";
+            PictureBoxUpdateAurora.Size = new System.Drawing.Size(32, 32);
+            PictureBoxUpdateAurora.SizeMode = PictureBoxSizeMode.StretchImage;
+            PictureBoxUpdateAurora.TabIndex = 43;
+            PictureBoxUpdateAurora.TabStop = false;
+            PictureBoxUpdateAurora.Click += ButtonUpdateAurora_Click;
             // 
             // FormMain
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(605, 287);
-            this.Controls.Add(this.PictureBoxUpdateLoader);
-            this.Controls.Add(this.PictureBoxUpdateAurora);
-            this.Controls.Add(this.ButtonMangeSaves);
-            this.Controls.Add(this.SelectedSavelabel);
-            this.Controls.Add(this.ButtonManageMods);
-            this.Controls.Add(this.ButtonMultiplayer);
-            this.Controls.Add(this.LinkModSubreddit);
-            this.Controls.Add(this.LabelDatabaseMods);
-            this.Controls.Add(this.LabelUtilities);
-            this.Controls.Add(this.LinkDiscord);
-            this.Controls.Add(this.LinkSubreddit);
-            this.Controls.Add(this.LinkReportBug);
-            this.Controls.Add(this.LinkForums);
-            this.Controls.Add(this.ListUtilities);
-            this.Controls.Add(this.ListDatabaseMods);
-            this.Controls.Add(this.ComboSelectExecutableMod);
-            this.Controls.Add(this.CheckEnablePoweruserMods);
-            this.Controls.Add(this.CheckEnableMods);
-            this.Controls.Add(this.LabelAuroraLoaderVersion);
-            this.Controls.Add(this.ButtonReadme);
-            this.Controls.Add(this.ButtonChangelog);
-            this.Controls.Add(this.CheckEnableMusic);
-            this.Controls.Add(this.TrackMusicVolume);
-            this.Controls.Add(this.LabelAuroraVersion);
-            this.Controls.Add(this.ButtonSinglePlayer);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.Margin = new System.Windows.Forms.Padding(4);
-            this.Name = "FormMain";
-            this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Show;
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Aurora Loader";
-            this.Load += new System.EventHandler(this.FormMain_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.TrackMusicVolume)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PictureBoxUpdateAurora)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PictureBoxUpdateLoader)).EndInit();
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new System.Drawing.Size(605, 287);
+            Controls.Add(PictureBoxUpdateAurora);
+            Controls.Add(ButtonMangeSaves);
+            Controls.Add(SelectedSavelabel);
+            Controls.Add(ButtonManageMods);
+            Controls.Add(ButtonMultiplayer);
+            Controls.Add(LinkModSubreddit);
+            Controls.Add(LabelDatabaseMods);
+            Controls.Add(LabelUtilities);
+            Controls.Add(LinkDiscord);
+            Controls.Add(LinkSubreddit);
+            Controls.Add(LinkReportBug);
+            Controls.Add(LinkForums);
+            Controls.Add(ListUtilities);
+            Controls.Add(ListDatabaseMods);
+            Controls.Add(ComboSelectExecutableMod);
+            Controls.Add(CheckEnablePoweruserMods);
+            Controls.Add(CheckEnableMods);
+            Controls.Add(LabelAuroraLoaderVersion);
+            Controls.Add(ButtonReadme);
+            Controls.Add(ButtonChangelog);
+            Controls.Add(CheckEnableMusic);
+            Controls.Add(TrackMusicVolume);
+            Controls.Add(LabelAuroraVersion);
+            Controls.Add(ButtonSinglePlayer);
+            FormBorderStyle = FormBorderStyle.FixedSingle;
+            Margin = new Padding(4);
+            Name = "FormMain";
+            SizeGripStyle = SizeGripStyle.Show;
+            StartPosition = FormStartPosition.CenterScreen;
+            Text = "Aurora Loader";
+            Load += FormMain_Load;
+            ((System.ComponentModel.ISupportInitialize)TrackMusicVolume).EndInit();
+            ((System.ComponentModel.ISupportInitialize)PictureBoxUpdateAurora).EndInit();
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
-        private System.Windows.Forms.Button ButtonSinglePlayer;
-        private System.Windows.Forms.Label LabelAuroraVersion;
-        private System.Windows.Forms.TrackBar TrackMusicVolume;
-        private System.Windows.Forms.CheckBox CheckEnableMusic;
-        private System.Windows.Forms.Button ButtonReadme;
-        private System.Windows.Forms.Button ButtonChangelog;
-        private System.Windows.Forms.Label LabelAuroraLoaderVersion;
-        private System.Windows.Forms.CheckBox CheckEnableMods;
-        private System.Windows.Forms.CheckBox CheckEnablePoweruserMods;
-        private System.Windows.Forms.ComboBox ComboSelectExecutableMod;
-        private System.Windows.Forms.CheckedListBox ListDatabaseMods;
-        private System.Windows.Forms.CheckedListBox ListUtilities;
-        private System.Windows.Forms.LinkLabel LinkForums;
-        private System.Windows.Forms.LinkLabel LinkReportBug;
-        private System.Windows.Forms.LinkLabel LinkSubreddit;
-        private System.Windows.Forms.LinkLabel LinkDiscord;
-        private System.Windows.Forms.Label LabelUtilities;
-        private System.Windows.Forms.Label LabelDatabaseMods;
+        private Button ButtonSinglePlayer;
+        private Label LabelAuroraVersion;
+        private TrackBar TrackMusicVolume;
+        private CheckBox CheckEnableMusic;
+        private Button ButtonReadme;
+        private Button ButtonChangelog;
+        private Label LabelAuroraLoaderVersion;
+        private CheckBox CheckEnableMods;
+        private CheckBox CheckEnablePoweruserMods;
+        private ComboBox ComboSelectExecutableMod;
+        private CheckedListBox ListDatabaseMods;
+        private CheckedListBox ListUtilities;
+        private LinkLabel LinkForums;
+        private LinkLabel LinkReportBug;
+        private LinkLabel LinkSubreddit;
+        private LinkLabel LinkDiscord;
+        private Label LabelUtilities;
+        private Label LabelDatabaseMods;
         private LinkLabel LinkModSubreddit;
         private Button ButtonMultiplayer;
         private Button ButtonManageMods;

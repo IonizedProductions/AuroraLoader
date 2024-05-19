@@ -160,9 +160,11 @@ namespace AuroraLoader
                     LabelAuroraVersion.Text = $"Aurora v{_auroraVersionRegistry.CurrentAuroraVersion.Version} ({_auroraVersionRegistry.CurrentAuroraVersion.Checksum})";
                 }
 
-                if (_modRegistry.AuroraLoaderMod.LatestInstalledVersion != null)
+                if (_modRegistry.AuroraLoaderMod == null)
                 {
-                    LabelAuroraLoaderVersion.Text = $"Loader v{_modRegistry.AuroraLoaderMod.LatestInstalledVersion.Version}";
+                    Console.WriteLine("_modRegistry.AuroraLoaderMod is null");
+                    LabelAuroraLoaderVersion.Text = "Loader version: Unknown";
+                    return;
                 }
 
                 if (_auroraVersionRegistry.CurrentAuroraVersion.Version.CompareTo(_auroraVersionRegistry.AuroraVersions.Max()?.Version) < 0)

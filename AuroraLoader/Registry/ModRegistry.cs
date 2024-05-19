@@ -175,5 +175,10 @@ namespace AuroraLoader.Registry
             }
             AuroraLoaderMod.UpdateCache();
         }
+
+        internal IEnumerable<object> GetMods(object database, AuroraVersion currentAuroraVersion)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
